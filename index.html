@@ -1,0 +1,86 @@
+<canvas id="canv" width=800 height=800></canvas>
+
+<script src="script.js"></script>
+
+<h1 id="showScore"> Score: 0</h1>
+
+<h1 id="start">PRESS SPACEBAR TO START!</h1>
+
+<h2 id="gameWon">You Win!!!</h2>
+<button id="restart" onclick="location.reload()">Restart</button>
+<button id="continue" onclick="cont()">Continue</button>
+
+
+<h1 id="gameEnd">You Lose!</h1>
+<button id="restart" onclick="location.reload()">Restart</button>
+<button id="continue" onclick="cont()">Continue</button>
+<style>
+
+    #showScore {
+        position: absolute;
+        top: 100px;
+        left: 860px;
+        font-family: impact;
+        border-style: solid;
+    }
+    #start {
+        display: none;
+        position: absolute;
+        color: black;
+        top: 500px;
+        left: 230px;
+        font-family: impact;
+        
+    }
+    #gameEnd {
+        position: absolute;
+        color: rgb(116, 177, 114);
+        top: 200px;
+        left: 220px;
+        right: 220px;
+        font-size: 100px;
+        font-family: impact;
+        display: none;
+        font-style: italic;
+    
+    }
+    #gameWon {
+        position: absolute;
+        color: rgb(116, 177, 114);
+        top: 200px;
+        left: 220px;
+        right: 220px;
+        font-size: 100px;
+        font-family: impact;
+        display: none;
+        font-style: italic;
+
+    }
+
+    #restart {
+        position: absolute;
+        color: black;
+        top: 400px;
+        left: 340px;
+        background-color: rgb(104, 180, 104);
+        border: none;
+        width: 150px;
+        height: 50px;
+        display: none;
+        font-family: impact;
+
+    }
+    #Continue {
+        position: absolute;
+        color: black;
+        top: 460px;
+        left: 340px;
+        background-color: rgb(96, 172, 96);
+        border: none;
+        width: 150px;
+        height: 50px;
+        display: none;
+        font-family: impact;
+
+    }
+</style>
